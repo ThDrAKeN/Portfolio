@@ -22,9 +22,12 @@ p {
   color: rgb(136, 146, 176);
 }
 
-hr.t {
-  width: 80%;
-  border-top:1px dashed white ;
+.dotted-spaced {
+
+  background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+  background-position: right;
+  background-size: 1px 3px;
+  background-repeat: repeat-y;
 }
 
 .title {
@@ -128,21 +131,24 @@ hr.t {
 }
 
 .close {
+  z-index: 999;
   background-color: #fa615c;
 }
 
 .max {
+  z-index: 999;
   background-color: #3fc950;
 }
 
 .min {
+  z-index: 999;
   background-color: #ffbd48;
 }
 
 .terminal-window {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  height: 254px;
+  height: 290px;
   padding: 0.5rem 0rem 0rem 0.5rem;
   display: flex;
   flex-direction: column;
@@ -198,6 +204,14 @@ hr.t {
   color: #8dd39e;
 }
 
+.info {
+  color: #5957c7;
+}
+
+.white {
+  color: white;
+}
+
 .code,
 .error,
 .fa-heart {
@@ -224,3 +238,30 @@ hr.t {
 }
 
 
+.sidebar-header * {
+  margin-top: 15px;
+}
+
+.closeLogo {
+  z-index: 9999;
+  position: fixed;
+  margin-left: 12.4px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.minLogo {
+  z-index: 9999;
+  position: fixed;
+  margin-left: 35.7px;
+  margin-top: 9px;
+  font-size: 10px;
+}
+
+.AgrLogo {
+  z-index: 9999;
+  position: fixed;
+  margin-left: 58.7px;
+  margin-top: 9px;
+  font-size: 10px;
+}

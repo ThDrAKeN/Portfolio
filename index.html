@@ -1,17 +1,22 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-  
+  <link rel="stylesheet" href="vivify.min.css">
 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
   <title>Document</title>
 </head>
+
 <body>
 
   <section class="hero is-fullheight">
@@ -23,11 +28,10 @@
               <div class="sidebar-header has-text-centered">
                 <img src="axel.jpg" class="sidebar-image">
                 <h2 class="header-name">Axel REGIMBAL</h2>
-                <h7>Web Developer</h7>
+                <h7>Apprentice Developer @ Aftec</h7>
                 <div class="social-icons" style="margin-top: 10px;">
                   <a href="https://twitter.com/ThDrAKeN" target="_blank"><i class="fab fa-twitter icon"></i></a>
-                  <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-                  <a href="https://steam.com/" target="_blank"><i class="fab fa-steam icon"></i></a>
+                  <a href="https://www.linkedin.com/in/axel-regimbal/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
                   <a href="https://github.com/ThDrAKeN" target="_blank"><i class="fab fa-github icon"></i></a>
                 </div>
                 <div class="resume">
@@ -39,12 +43,12 @@
             </div>
           </div>
           <div class="column is-flex">
-            <div class="column-child terminal shadow">
+            <div class="column-child terminal shadow" id="terminal">
               <div class="terminal-bar dark-mode">
-                <div class="icon-btn close"></div>
-                <div class="icon-btn min"></div>
-                <div class="icon-btn max"></div>
-                <div class="terminal-bar-text is-hidden-mobile dark-mode-text">visitor@<span id="gfg">local</span>: ~</div>
+                <div class="icon-btn close" onclick="effect()" onmouseover="displayClose()" onmouseout="hideClose()"></div><div id="close" class="closeLogo" onclick="effect()" onmouseover="displayClose()" onmouseout="hideClose()"></div>
+                <div class="icon-btn min" onclick="effect2()" onmouseover="displayMin()" onmouseout="hideMin()"></div><div id="Min" class="minLogo" onclick="effect2()" onmouseover="displayMin()" onmouseout="hideMin()"></div>
+                <div class="icon-btn max" onclick="effect2()" onmouseover="displayAgr()" onmouseout="hideAgr()"></div><div id="Agr" class="AgrLogo" onclick="effect2()" onmouseover="displayAgr()" onmouseout="hideAgr()"></div>
+                <div class="terminal-bar-text is-hidden-mobile dark-mode-text">visitor@<span class="ip">connecting..</span>:~/portfolio</div>
               </div>
               <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeyboard').focus();">
                 <div class="terminal-output" id="terminalOutput">
@@ -54,7 +58,8 @@
                   </div>
                 </div>
                 <div class="terminal-line">
-                  <span class="success">➜</span> <span class="directory">~</span> <span class="user-input"
+                  <span class="success">visitor@<span class="ip">connecting..</span>:<span
+                      class="directory">~/portfolio</span></span><span class="white">$</span> <span class="user-input"
                     id="userInput"></span>
                   <input type="text" id="dummyKeyboard" class="dummy-keyboard">
                 </div>
@@ -76,8 +81,7 @@
 
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  
+
 </body>
+
 </html>
-
-
