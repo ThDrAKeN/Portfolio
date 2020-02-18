@@ -71,3 +71,10 @@ const backspace = function backSpaceKeyEvent(e) {
 document.addEventListener("keydown", backspace);
 document.addEventListener("keypress", key);
 document.addEventListener("DOMContentLoaded", app);
+
+$.getJSON("https://api.ipify.org?format=json", 
+                                          function(data) { 
+  
+            // Setting text of element P with id gfg 
+            $("#gfg").html(data.ip); 
+        }) 
