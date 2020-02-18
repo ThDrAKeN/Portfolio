@@ -22,6 +22,11 @@ p {
   color: rgb(136, 146, 176);
 }
 
+hr.t {
+  width: 80%;
+  border-top:1px dashed white ;
+}
+
 .title {
   color: rgba(139, 180, 216, 0.94);
 }
@@ -217,3 +222,5 @@ p {
     padding-bottom: 0.5rem;
   }
 }
+
+

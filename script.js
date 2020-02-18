@@ -3,15 +3,15 @@ const COMMANDS = {
   help:
     'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">contact</span>',
   about:
-    "Hello 👋<br>I'm Jatin Rao. I’m a 15 yr old web developer currently living in India. I have a burning passion to want and help others with code that I create. I enjoy the limitless potential of impact that I can have with what I build. It is what pushes me every day to become a better developer. Outside of coding, you can find me eating choclates!",
+    "Hello 👋<br>Moi c'est Axel ! <br> J'ai 19 ans, et je suis en apprentissage a l'aftec !",
   skills:
-    '<span class="code">Languages:</span> Python, HTML, CSS, JavaScript<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> React.js, Vue.js, Django',
+    '<span class="code">Langages:</span> HTML, CSS, JavaScript, PHP<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> Cordova, Tensorflow.js, Bootstrap',
   education:
-    "St. Dominic's Academy, India<br>Higher Secondary — Computer Science",
+    "<div style='font-size:12px'>St. Paul Bourdon Blanc, Orléans, France<br>BAC Pro SeN — Computer networks and communicating systems<hr class='t'>St. Paul Bourdon Blanc, Orléans, France<br>BEP SeN — Computer networks and communicating systems<hr class='t'></div>",
   resume: "<a href='./resume.pdf' class='success link'>resume.pdf</a>",
-  experience: "No Experience😥",
+  experience: "Experience😥",
   contact:
-    "You can contact me on any of following links:<br><a href='https://www.facebook.com/jatin.rao.51/' class='success link'>Facebook</a> ,<a href='https://www.instagram.com/jatin.codes/' class='success link'>Instagram</a>, <a href='https://www.twitter.com/jatinn_r/' class='success link'>Twitter</a>"
+    ""
 };
 let userInput, terminalOutput;
 
@@ -72,9 +72,17 @@ document.addEventListener("keydown", backspace);
 document.addEventListener("keypress", key);
 document.addEventListener("DOMContentLoaded", app);
 
+
+
+
+
+
 $.getJSON("https://api.ipify.org?format=json", 
                                           function(data) { 
   
             // Setting text of element P with id gfg 
             $("#gfg").html(data.ip); 
-        }) 
+        })
+
+
+
