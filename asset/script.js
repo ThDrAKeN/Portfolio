@@ -92,7 +92,7 @@ $.getJSON({
 
 
 var terminal = document.getElementById("terminal");
-var audio = new Audio('err_sound.mp3');
+var audio = new Audio('asset/err_sound.mp3');
 audio.volume = 0.2;
 
 function effect() {
