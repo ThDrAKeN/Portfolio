@@ -5,13 +5,15 @@ const COMMANDS = {
   about:
     "Hello 👋<br>I'm Axel ! <br> I'm 19 years old and I'm an apprentice at aftec !",
   skills:
-    '<span class="code">Langages:</span> HTML, CSS, JavaScript, PHP<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> Cordova, Tensorflow.js, Bootstrap',
+    '<span class="code">Langages:</span> HTML, CSS, JavaScript, PHP<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> Cordova, Bootstrap',
   education:
     "AFTEC Formation, Orléans | 2016-2019<br>BTS SIO (SLAM) — Developer 💻<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2019<br>BAC Pro SeN — Computer networks and communicating systems<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2018<br>BEP SeN — Computer networks and communicating systems",
   resume: "<a href='./resume.pdf' class='success link'>resume.pdf</a>",
   experience: "Experience😥",
   contact:
-    ""
+    "",
+  sudo:
+    "Really ? 😳"
 };
 let userInput, terminalOutput;
 
@@ -28,7 +30,7 @@ const execute = function executeCommand(input) {
   if (input.length === 0) {
     return;
   }
-  output = `<div class="terminal-line"><span class="success">visitor@${ip}:<span class="directory">~/portfolio</span> <span class="white">${input}</span></div> `;
+  output = `<div class="terminal-line"><span class="success">visitor@${ip}:<span class="directory">~/portfolio</span><span class="white">$ ${input}</span></div> `;
   if (!COMMANDS.hasOwnProperty(input)) {
     output += `<div class="terminal-line">no such command: ${input}</div>`;
     console.log("Oops! no such command");
