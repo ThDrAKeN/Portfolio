@@ -1,18 +1,16 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
   help:
-    'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">contact</span>',
+    'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>',
   about:
-    "Hello 👋<br>I'm Axel ! <br> I'm 19 years old and I'm an apprentice at aftec !",
+    "Hello 👋<br>I'm Axel ! <br> I'm 20 years old and I'm an apprentice at aftec !",
   skills:
-    '<span class="code">Langages:</span> HTML, CSS, JavaScript, PHP<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> Cordova, Bootstrap',
+    '<span class="code">Langages:</span> JavaScript, PHP, Java<br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> React & Native, Cordova, Bootstrap',
   education:
-    "AFTEC Formation, Orléans | 2016-2019<br>BTS SIO (SLAM) — Developer 💻<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2019<br>BAC Pro SeN — Computer networks and communicating systems<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2018<br>BEP SeN — Computer networks and communicating systems",
+    "AFTEC Formation, Orléans | 2019-2021<br>BTS SIO (SLAM) — Developer 💻<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2019<br>BAC Pro SeN — Computer networks and communicating systems<br><br>St. Paul Bourdon Blanc, Orléans | 2016-2018<br>BEP SeN — Computer networks and communicating systems",
   resume: "<a href='./resume.pdf' class='success link'>resume.pdf</a>",
-  experience: "Experience😥",
-  contact:
-    "",
-  sudo:
+  experience: 'Apprentice Developer <br>Groupe Trouillet | Work-study contract <br> août 2019 – Aujourd’hui <br><br> Intern in IT <br>Groupe Trouillet | Internship <br> déc 2018 – janv 2019 <br><br> IT Assistant <br>Groupe Trouillet | CDD <br> août 2018 <br><br>',
+  su:
     "Really ? 😳"
 };
 let userInput, terminalOutput;
